@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netwise</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Gochi+Hand&family=Mate+SC&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <h1 id="netwise-text"></h1>
+    </div>
+ 
+<button class="btn" id="getStartedBtn" onclick="showLoaderAndNavigate()" disabled>
+  <span>Get Started</span>
+  <svg width="15px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</button>
+
+<div class="loader" id="loader">
+  <div class="justify-content-center jimu-primary-loading"></div>
+</div>
+
+   <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Gochi+Hand&family=Mate+SC&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">NETWISE</div>
+        <form class="form" id="myForm">
+            <div class="input-field">
+                <input
+                    required=""
+                    autocomplete="off"
+                    type="text"
+                    name="text"
+                    id="firstname"
+                    pattern="[A-Za-z\s]+"
+                    title="Only letters and spaces allowed"
+                />
+                <label for="firstname">First Name</label>
+            </div>
+            <div class="input-field">
+                <input
+                    required=""
+                    autocomplete="off"
+                    type="date"
+                    name="dateofbirth"
+                    id="dateofbirth"
+                    min="1900-01-01"
+                    max="2007-12-31"
+                />
+                <label for="dateofbirth">Date of Birth</label>
+            </div>
+            <div class="input-field">
+                <input
+                    required=""
+                    autocomplete="off"
+                    type="number"
+                    name="salary"
+                    id="salary"
+                />
+                <label for="salary">Salary Per Annum</label>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="loader" id="loader">
+        <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
